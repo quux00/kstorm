@@ -36,19 +36,6 @@
               <mainClass></mainClass>
             </manifest>
           </archive>
-          <!-- <dependencySets> -->
-          <!--   <dependencySet> -->
-          <!--     <outputDirectory>/</outputDirectory> -->
-          <!--     <useProjectArtifact>true</useProjectArtifact> -->
-          <!--     <unpack>true</unpack> -->
-          <!--     <scope>runtime</scope> -->
-          <!--     <excludes> -->
-          <!--       <exclude>org.slf4j:log4j-over-slf4j</exclude> -->
-          <!--       <exclude>org.slf4j:slf4j-log4j12</exclude> -->
-          <!--       <exclude>log4j:log4j</exclude> -->
-          <!--     </excludes> -->
-          <!--   </dependencySet> -->
-          <!-- </dependencySets> -->
         </configuration>
         
         <executions>

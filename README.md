@@ -23,6 +23,7 @@ This code has been tested on Linux in cluster-mode using:
 
 * Storm 0.9.3
 * Kafka 2.10-0.8.1.1
+* the version of Zookeeper that comes with Kafka 2.10-0.8.1.1 (zookeeper-3.3.4)
 
 
 # Usage
