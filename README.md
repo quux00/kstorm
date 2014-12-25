@@ -27,12 +27,12 @@ This code has been tested on Linux in cluster-mode using:
 
 The in-memory `SentenceSpout` topologies can be run in local mode by setting the System property `localmode=true` (defaults to false).
 
-The KafkaSpout based topology cannot be run in local mode.
+The KafkaSpout based topologies cannot be run in local mode.
 
 
 ## Running the KafkaSpout based wordcount example
 
-Install and start ZooKeeper, Storm and Kafka (see version notes above).  This example assumes both are running on localhost.  If not, you will need to change the `zkHostPort` settings in the kafka `WordCountAckedTopology` and `WordCountNonAckedTopology` classes to point to where zookeeper is running.
+Install and start ZooKeeper, Storm and Kafka (see version notes above).  This example assumes all are running on localhost.  If not, you will need to change the `zkHostPort` settings in the kafka `WordCountAckedTopology` and `WordCountNonAckedTopology` classes to point to where zookeeper is running.
 
 Create the "sentences" topic in Kafka:
 
@@ -46,13 +46,14 @@ Submit the uber-jar to storm and specify either the Acked or NonAcked Topology:
 
     storm jar target/kstorm-1.0-SNAPSHOT-jar-with-dependencies.jar quux00.wordcount.kafka.WordCountNonAckedTopology
     # or
-    storm jar target/kstorm-1.0-SNAPSHOT-jar-with-dependencies.jar quux00.wordcount.kafka.WordCountNonAckedTopology
+    storm jar target/kstorm-1.0-SNAPSHOT-jar-with-dependencies.jar quux00.wordcount.kafka.WordCountAckedTopology
 
 Now you'll need to put some sentences into the sentence topic.
 
 You can either do it manually with:
 
     $KAFKA_BIN/kafka-console-producer.sh --broker-list localhost:9092 --topic sentences
+    (and now type a bunch of sentences in)
 
 or use the example code I provide that puts in a bunch of sentences over a few minutes.
 
