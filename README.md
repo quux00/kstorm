@@ -47,6 +47,8 @@ Create the "sentences" topic in Kafka:
 
     $KAFKA_BIN/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic sentences
 
+The `pom.xml` can be adjusted to specify which version of Kafka you want to depend on.  The default is 2.10-0.8.2-beta.
+
 Compile and build the uber-jar:
 
     mvn clean package
