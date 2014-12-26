@@ -1,6 +1,6 @@
 # Overview
 
-This is an example repo that shows how to set up a Java project to use the `KafkaSpout` that is now part of Storm with version 0.9.3.  Other examples online at the time of this writing are either wrong (outdated) or show how to run with KafkaSpout in local mode but not "cluster-mode" against a separate Kafka system or confusing in that they add a lot of superfluous stuff (and do the example in a Scala).  This example is in the vein of "do the simplest thing that can work".
+This is an example repo that shows how to set up a Java project to use the `KafkaSpout` that is now part of Storm with version 0.9.3.  Other examples online at the time of this writing are either wrong (outdated) or show how to run with KafkaSpout in local mode but not "cluster-mode" against a separate Kafka system or confusing in that they add a lot of superfluous stuff (and do the example in Scala).  This example is in the vein of "do the simplest thing that can work".
 
 Getting the pom set up right so that the incompatible logging libraries between Storm and Kafka don't shoot the topology in the head is the hardest part (lost a day of my life getting that sorted out).  So that is probably the most fragile piece - it may break on other systems and with other versions (past or future).
 
