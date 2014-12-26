@@ -25,6 +25,12 @@ This code has been tested on Linux in cluster-mode using:
 * Kafka 2.10-0.8.1.1
 * the version of Zookeeper that comes with Kafka 2.10-0.8.1.1 (zookeeper-3.3.4)
 
+and
+
+* Storm 0.9.3
+* Kafka 2.10-0.8.2-beta
+* the version of Zookeeper that comes with kafka_2.10-0.8.2-beta (zookeeper-3.4.6)
+
 
 # Usage
 
